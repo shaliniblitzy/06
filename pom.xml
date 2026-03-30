@@ -50,6 +50,14 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.plugin.version}</version>
+                <configuration>
+                    <excludes>
+                        <!-- AgeCalculatorApp is the console I/O entry point and is
+                             explicitly out of scope for unit testing (AAP §0.3.1).
+                             Excluding from coverage to prevent false bundle-level failures. -->
+                        <exclude>com/agecalculator/AgeCalculatorApp.class</exclude>
+                    </excludes>
+                </configuration>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
