@@ -73,7 +73,7 @@ Coverage reports generated at `target/site/jacoco/index.html`.
 
 ## Usage Example
 
-```
+```text
 Enter your Date of Birth (DD/MM/YYYY): 15/08/1998
 Your age is 27 years, 6 months, and 15 days.
 ```
